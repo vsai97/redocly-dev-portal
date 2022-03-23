@@ -9,31 +9,23 @@ linkChecker:
   options:
     CheckExternal: false
 logo:
-  image: ./images/logo.png
+  image: ./images/logo.svg
   altText: Redocly Training
 toc:
   enable: true
 oasDefinitions:
   petstore: ./openapi/petstore.yaml
   testSai: https://api.redocly.com/registry/bundle/test-1-43l/Test/v1/openapi.yaml?branch=main
+  goldDeposits: https://api.redocly.com/registry/bundle/m2p-fintech-q1j/Gold%20Deposits/v2/openapi.yaml?branch=master 
   # add links to definitions in our API registry by using a fully qualified URL.
 stylesheets:
   - https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap
   - https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700&display=swap
 #analytics:
-  # ga:
-  # note that GA doesn't work in the development environment
-  #  trackingId: UA-45997213-1
-#scripts:
-#  - ./static/intercom.js
+ # heap:
+  #  appId: redoc-test
+   # enableOnDevMode: false # set to false by default
 nav:
-
-  - label: Training exercises
-    page: developer-portal/index.md
-
-  - label: External docs
-    icon: ./images/redocly-icon-white.png
-    href: https://redoc.ly/docs/developer-portal/introduction/
 
   - search: true
 
